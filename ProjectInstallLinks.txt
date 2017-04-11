@@ -1,0 +1,9 @@
+https://www.mongodb.com/download-center#community
+
+https://angularjs.org/
+
+https://nodejs.org/en/download/
+
+https://expressjs.com/
+
+http://mongoosejs.com/docs/index.html
