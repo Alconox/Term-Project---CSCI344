@@ -1,0 +1,24 @@
+var PatternSchema = mongoose.Schema ({"name" : String,
+				      "designer" : String,
+				      "publication" : String,
+				      "category" : String,
+				      "yarn-weight" : String,
+				      "needle-size-us" : String,
+				      "needle-size-mm" : String,
+				      "yardage" : String,
+				      "image1" : String,
+				      "image2" : String
+				     });
+
+var Pattern = mongoose.model("Pattern", PatternSchema);
+
+var Cladonia = new Pattern({"name" : "Cladonia",
+			    "designer" : "Kirsten Kapur",
+			    "publication" : "Through The Loops",
+			    "category" : "Shawl",
+			    "yarn-weight" : "Fingering",
+			    "needle-size-us" : "7",
+			    "needle-size-mm" : "4.5",
+			    "yardage" : "520 - 550",
+			    "image-url" : "https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg"
+			   });
