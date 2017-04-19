@@ -23,7 +23,7 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><img src="https://cdn.pixabay.com/photo/2014/04/02/10/18/cat-303399_1280.png" alt="cat" style="width:100%;max-height:25px;max-width:35px;"></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><img src=images/cat.jpg alt="cat" style="width:100%;max-height:25px;max-width:35px;"></a>
   <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Our Team</a>
   <a href="#patterns" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Top Patterns</a>
   <a href="#designs" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Designs</a>
@@ -39,10 +39,9 @@
 
 
   </div id="wrap">
-  <form action="" autocomplete="on">
-  <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" type="submit">
-  </form>
-  <a href="https://www.google.com/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+      <form action="" autocomplete="on">
+          <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+      </form>  
  </div>
 
 
@@ -58,7 +57,15 @@
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
-  <img src="http://prima.cdnds.net/assets/15/24/980x490/landscape-1433811339-how-to-knit.jpg" alt="Knitted Hat" style="width:100%;min-height:350px;max-height:600px;">
+  <img class="mySlides" src="http://prima.cdnds.net/assets/15/24/980x490/landscape-1433811339-how-to-knit.jpg" alt="Knitted Mitts" style="width:100%;min-height:350px;max-height:600px;">
+  <img class="mySlides" src="http://kerncountylibrary.org/wp-content/uploads/2016/12/hands-knitting.jpg" alt="knitting" style="width:100%;min-height:350px;max-height:600px;">
+  <img class="mySlides" src="http://az616578.vo.msecnd.net/files/2016/06/08/6360101310525930891495402223_KnittingBasket.jpg" alt="materials" style="width:100%;min-height:350px;max-height:600px;">
+  <img class="mySlides" src="https://fthmb.tqn.com/vnqorH_-yyX9mAZ0UkcvaN1y_sM=/5616x3744/filters:no_upscale()/about/Circular-knitting-needles-Yarn-58a1f4d05f9b58819c7922a0.jpg" alt="yarn" style="width:100%;min-height:350px;max-height:600px;">
+  <img class="mySlides" src="https://sheeptoshawl.com/wp-content/uploads/2016/02/ArcticLaceProjectsDSC00729.jpg" alt="shapes" style="width:100%;min-height:350px;max-height:600px;">
+  <div id="arrows" class="w3-center w3-display-middle w3-xxlarge" style="width:100%;">
+    <div class="w3-left w3-xxlarge" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-xxlarge" onclick="plusDivs(1)">&#10095;</div>
+  </div>
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Welcome to Knitten Kaboodle!">Welcome!</button>
   </div>
@@ -91,25 +98,25 @@
 <div class="w3-quarter">
   <img src="https://ssbprod-unca.uncecs.edu/photos/p377553.jpg" alt="Justin" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Justin Blankenship</h3>
-  <p>Unknown</p>
+  <p>Design & Style</p>
 </div>
 
 <div class="w3-quarter">
   <img src="https://ssbprod-unca.uncecs.edu/photos/p382418.jpg" alt="Kaitlin" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Kaitlin Porter</h3>
-  <p>Unknown</p>
+  <p>Design & Style</p>
 </div>
 
 <div class="w3-quarter">
   <img src="https://ssbprod-unca.uncecs.edu/photos/p378877.jpg" alt="Michael" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Michael Parker</h3>
-  <p>Unknown</p>
+  <p>Database & Server</p>
 </div>
 
 <div class="w3-quarter">
   <img src="https://ssbprod-unca.uncecs.edu/photos/p351666.jpg" alt="Daquan" style="width:45%" class="w3-circle w3-hover-opacity">
   <h3>Dahquan Williams</h3>
-  <p>Unknown</p>
+  <p>Database & Server</p>
 </div>
 
 </div>
@@ -253,23 +260,7 @@
 
 <!-- Google Maps -->
 <div id="googleMap" style="width:100%;height:420px;"></div>
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(35.616532, -82.567012);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
+<script src="scripts/maps.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0htEPXNS3XuuVkjwQekJbhmWy9Drb338&callback=myMap"></script>
 
 <!-- Footer -->
@@ -289,30 +280,8 @@ function myMap()
   </div>
 </footer>
 
-<script>
-// Script for side navigation
-function w3_open() {
-    var x = document.getElementById("mySidebar");
-    x.style.width = "300px";
-    x.style.paddingTop = "10%";
-    x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+<script src="scripts/navigation.js"></script>
+<script src='scripts/slideshow.js'></script>
 
 </body>
 </html>
