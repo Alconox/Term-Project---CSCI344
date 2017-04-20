@@ -42,7 +42,6 @@
   right: 0;
   z-index: 2;
   cursor: pointer;
-  cursor: pointer;
   transition: opacity .4s ease;
 }
 
@@ -52,4 +51,20 @@
 
 #arrows {
     cursor: pointer;
+}
+
+#googleMap {
+   width:100%;
+   height:420px;
+}
+
+/* tags for modifying image presentation */
+.imageHead {
+   width: 100%;
+   min-height: 350px;
+   max-height: 600px;
+}
+
+.crewPics{
+   width: 45%;
 }
