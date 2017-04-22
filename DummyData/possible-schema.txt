@@ -20,5 +20,6 @@ var Cladonia = new Pattern({"name" : "Cladonia",
 			    "needle-size-us" : "7",
 			    "needle-size-mm" : "4.5",
 			    "yardage" : "520 - 550",
-			    "image-url" : "https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg"
+			    "image1" : "https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg",
+			    "image2" : "http://farm6.static.flickr.com/5148/5658365207_e59e6fec2b_z.jpg"
 			   });
