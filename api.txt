@@ -1,7 +1,9 @@
+Ravelry API:
 http://www.ravelry.com/api <-- documentation
-
-Keys
---
 Access key: 05A453AF2BFCE7D3E6F6
 Secret key: vjorRxKgW0yZ2oymJcSB1Bh9qMfTDJYv4JCCOo+U
 Personal key: 0kJi0-27w1iBX1z0OGm_dMw65zjIpgJMEAVQWGN4
+
+
+Google Maps API:
+Key: AIzaSyD0htEPXNS3XuuVkjwQekJbhmWy9Drb338
