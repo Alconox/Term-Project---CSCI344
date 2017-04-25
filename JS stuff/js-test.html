@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>JavaScript Insertion Go</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <style>
+        .patternDisplay {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+   <div id="insert"></div>
+    
+<!--
+    <div class="ex w3-quarter">
+        <ul class="w3-ul w3-border">
+            <li><img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" class="w3-image w3-circle" alt="Cladonia shawl"></li>
+            <li class="w3-center w3-hover-shadow">Cladonia</li>
+        </ul>
+    </div>
+    
+    <div class="ex w3-quarter">
+        <ul class="w3-ul w3-border">
+            <li><p class="w3-circle patternDisplay" alt="Cladonia shawl"></p></li>
+            <li class="w3-center w3-hover-shadow">Cladonia</li>
+        </ul>
+    </div>
+    
+    <div class="ex w3-quarter">
+        <ul class="w3-ul w3-border">
+            <li><img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" class="w3-circle patternDisplay" alt="Cladonia shawl"></li>
+            <li class="w3-center w3-hover-shadow">Cladonia</li>
+        </ul>
+    </div>
+-->
+   <script>
+   var Cladonia = {"name" : "Cladonia",
+			    "designer" : "Kirsten Kapur",
+			    "publication" : "Through The Loops",
+			    "category" : "Shawl",
+			    "yarn-weight" : "Fingering",
+			    "needle-size-us" : "7",
+			    "needle-size-mm" : "4.5",
+			    "yardage" : "520 - 550",
+			    "image1" : "https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg",
+			    "image2" : "http://farm6.static.flickr.com/5148/5658365207_e59e6fec2b_z.jpg"
+			   };
+   var WaitingForRain = {"name" : "Waiting For Rain",
+			    "designer" : "Sylvia McFadden",
+			    "publication" : "Softsweater Knits",
+			    "category" : "Shawl",
+			    "yarn-weight" : "Fingering",
+			    "needle-size-us" : "6",
+			    "needle-size-mm" : "4.0",
+			    "yardage" : "760 - 800",
+			    "image1" : "http://images4-cdn.ravelrycache.com/uploads/softsweater/355112954/image.jpeg",
+			    "image2" : "http://farm2.static.flickr.com/1627/24600325983_fb5eeca8e6_b.jpg"
+			   };
+      
+      /*var callPattern = function (pattern) {
+         $("<img>").attr("src", pattern.image1).appendTo("#insert");
+         $("<ul>").addClass("patternDisplay").appendTo("#insert");
+         $("<li>").html("<strong>Name</strong> : " + pattern.name).appendTo(".patternDisplay");
+         $("<li>").html("<strong>Designer</strong> : " + pattern.designer).appendTo(".patternDisplay");
+         $("<li>").html("<strong>Publication</strong> : " + pattern.publication).appendTo(".patternDisplay");
+         $("<li>").html("<strong>Category</strong> : " + pattern.category).appendTo(".patternDisplay");
+         $("<li>").html("<strong>Yarn Weight</strong> : " + pattern["yarn-weight"]).appendTo(".patternDisplay");
+         $("<li>").html("<strong>Needle Size</strong> : " + pattern["needle-size-us"] + " (US) / " + Cladonia["needle-size-mm"] + " (mm)").appendTo(".patternDisplay");
+         $("<li>").html("<strong>Yardage</strong> : " + pattern.yardage).appendTo(".patternDisplay");
+         $("<ul>").removeClass("patternDisplay");
+      }*/
+      
+      /*var patList = function (pattern) {
+         var displayBlock = document.createElement("div");
+         displayBlock.className = "w3-quarter";
+          //$("<div>").addClass("w3-quarter").appendTo("#insert");
+         $("<p>").addClass("w3-circle patternDisplay").css("background-image", "url(" + pattern.image1 + ")").addClass("w3-image")
+             .wrap(displayBlock).appendTo("#insert");
+      }*/
+       
+       var patList = function (pattern) {
+           $("div").addClass("w3-quarter").html(
+                "<ul class='w3-ul w3-border'><li><img src='" + pattern.image1 + "' class='w3-circle'></li> <li class='w3-center w3-hover-shadow'>" + pattern.name + "</li>"
+           ).appendTo("#insert");
+       }
+      
+   //callPattern(Cladonia);
+   //callPattern(WaitingForRain);
+      
+      patList(Cladonia);
+      patList(WaitingForRain);
+   </script>
+</body>
+
+</html>

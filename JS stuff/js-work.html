@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Insertion Go</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+
+<body>
+   <div id="display">
+      <div id="patternContent" ng-app="" ng-init="patName='Cladonia'; needleSizeUS='7'; needleSizeMM='4.5'">
+      <span id="closeDisplay">X</span>
+         <h2 style="margin:0;margin-bottom:5px;"><span ng-bind="patName"></span></h2>
+         <img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" class="imgThumb">
+         <ul id="patternList">
+            <li>Designer: <span ng-bind="designer"></span></li>
+            <li>Publication: <span ng-bind="publication"></span></li>
+            <li>Yarn-Weight: <span ng-bind="yarnweight"></span></li>
+            <li>Needle Sizes: <span ng-bind="needleSizeUS"></span> (US) / <span ng-bind="needleSizeMM"></span> (MM)</li>
+            <li>Yardage: <span ng-bind="yardage"></span></li>
+         </ul>      
+      </div>
+   </div>
+   
+    <div id="insert"></div>
+    <script src="js.js"></script>
+    <script>
+       $("li.openDisplay").click(function() {
+          document.getElementById("display").style.display = "block";
+       });
+       
+       $("#closeDisplay").click(function() {
+         document.getElementById("display").style.display = "none";
+       });
+    </script>
+</body>
+
+</html>
