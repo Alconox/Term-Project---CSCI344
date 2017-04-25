@@ -12,16 +12,16 @@
 
 <body>
    <div id="display">
-      <div id="patternContent" ng-app="" ng-init="patName='Cladonia'; needleSizeUS='7'; needleSizeMM='4.5'">
+      <div id="patternContent" ng-app="patDisplay" ng-controller="MainCTRL" ng-init="getInfo(patName)">
       <span id="closeDisplay">X</span>
-         <h2 style="margin:0;margin-bottom:5px;"><span ng-bind="patName"></span></h2>
+         <h2 style="margin:0;margin-bottom:5px;">{{patName}}</h2>
          <img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" class="imgThumb">
          <ul id="patternList">
-            <li>Designer: <span ng-bind="designer"></span></li>
-            <li>Publication: <span ng-bind="publication"></span></li>
-            <li>Yarn-Weight: <span ng-bind="yarnweight"></span></li>
-            <li>Needle Sizes: <span ng-bind="needleSizeUS"></span> (US) / <span ng-bind="needleSizeMM"></span> (MM)</li>
-            <li>Yardage: <span ng-bind="yardage"></span></li>
+            <li>Designer: {{patDesigner}}</li>
+            <li>Publication: {{patPublication}}</li>
+            <li>Yarn-Weight: {{patYarnWeight}}</li>
+            <li>Needle Sizes: {{patNeedleSizeUS}} (US) / {{patNeedleSizeMM}} (MM)</li>
+            <li>Yardage: {{patYardage}}</li>
          </ul>      
       </div>
    </div>
@@ -37,6 +37,34 @@
          document.getElementById("display").style.display = "none";
        });
     </script>
+   
+    <script>
+      var patName = "Cladonia",
+          patDesigner = "Kirsten Kapur",
+          patPublication = "Through The Loops",
+          patYarnWeight = "Fingering",
+          patNeedleSizeUS = "7",
+          patNeedleSizeMM = "4.5",
+          patYardage = "520 - 550";
+    </script>
+   
+   <!-- Angular module -->
+    <script>
+      var app = angular.module('patDisplay', []);
+       app.controller('MainCTRL', ['$scope', '$window', function($scope, $window) {
+          $scope.patName = $window.patName;
+          $scope.patDesigner = $window.patDesigner;
+          $scope.patPublication = $window.patPublication;
+          $scope.patYarnWeight = $window.patYarnWeight;
+          $scope.patNeedleSizeUS = $window.patNeedleSizeUS;
+          $scope.patNeedleSizeMM = $window.patNeedleSizeMM;
+          $scope.patYardage = $window.patYardage;
+          
+          $scope.getInfo = function(id) {
+             console.log(id);
+          };
+       }]);
+   </script>
 </body>
 
 </html>
