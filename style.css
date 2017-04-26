@@ -1,70 +1,146 @@
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
 #search {
-  height: 40px;
-  font-size: 100%;
-  background-color: white;
-  display: inline-block;
-  font-family: "Lato";
-  font-weight: 100;
-  border: none;
-  outline: none;
-  color: lightgray;
-  padding: 3px;
-  padding-right: 60px;
-  width: 0px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: white;
-  z-index: 3;
-  transition: width 2s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-  cursor: text;
+   height: 40px;
+   font-size: 100%;
+   background-color: white;
+   display: inline-block;
+   font-family: "Lato";
+   font-weight: 100;
+   border: none;
+   outline: none;
+   color: lightgray;
+   padding: 3px;
+   padding-right: 60px;
+   width: 0px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: white;
+   z-index: 3;
+   transition: width 2s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+   cursor: text;
 }
 
 #search:focus:hover {
-  border-bottom: 1px solid #BBB;
+   border-bottom: 1px solid #BBB;
 }
 
 #search:focus {
-  width: 300px;
-  z-index: 1;
-  border-bottom: 1px solid #BBB;
-  cursor: text;
+   width: 300px;
+   z-index: 1;
+   border-bottom: 1px solid #BBB;
+   cursor: text;
 }
+
 #submit {
-  height: 100%;
-  width: 63px;
-  display: inline-block;
-  color:red;
-  float: right;  
-  border: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  cursor: pointer;
-  transition: opacity .4s ease;
+   height: 100%;
+   width: 63px;
+   display: inline-block;
+   color: red;
+   float: right;
+   border: none;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 2;
+   cursor: pointer;
+   transition: opacity .4s ease;
 }
 
 #submit:hover {
-  opacity: 0.8;
+   opacity: 0.8;
 }
 
 #arrows {
-    cursor: pointer;
+   cursor: pointer;
 }
 
 #googleMap {
-   width:100%;
-   height:420px;
+   width: 100%;
+   height: 420px;
 }
 
+
 /* tags for modifying image presentation */
+
 .imageHead {
    width: 100%;
    min-height: 350px;
    max-height: 600px;
 }
 
-.crewPics{
+.crewPics {
    width: 45%;
+}
+
+
+/* design for displaying patterns */
+
+.patternDisplay {
+   width: 100%;
+   height: 100%;
+   min-height: 190px;
+   display: block;
+   background-position: center;
+   background-size: 100%;
+}
+
+#display {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 10;
+   background-color: RGBA(0, 0, 0, 0.3);
+   display: none;
+}
+
+#patternContent {
+   background-color: white;
+   max-width: 430px;
+   margin: auto;
+   padding: 20px;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   min-height: 50%;
+   overflow: auto;
+   border: 1px;
+}
+
+#patternList {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   padding-bottom: 5px;
+   padding-top: 5px;
+}
+
+#patternList lh {
+   font-size: 24px;
+}
+
+#patternList li {
+   margin: 0;
+   padding: 2px;
+}
+
+.imgThumb {
+   max-width: 400px;
+   padding-right: 15px;
+}
+
+#closeDisplay {
+   float: right;
+   width: 15px;
+   height: 15px;
+   cursor: pointer;
+   font-family: "Verdana";
+}
+
+.openDisplay {
+   cursor: pointer;
 }
