@@ -1,70 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="patDisplay">
 
 <head>
-    <title>JavaScript Insertion Go</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" type="text/css" href="../style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <title>JavaScript Insertion Go</title>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+   <link rel="stylesheet" type="text/css" href="../style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body>
    <div id="display">
-      <div id="patternContent" ng-app="patDisplay" ng-controller="MainCTRL" ng-init="getInfo(patName)">
-      <span id="closeDisplay">X</span>
-         <h2 style="margin:0;margin-bottom:5px;">{{patName}}</h2>
-         <img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" class="imgThumb">
+      <div id="patternContent" ng-controller="MainCTRL" ng-init="getInfo(patName)"> <span id="closeDisplay">X</span>
+         <h2 style="margin:0;margin-bottom:5px;">{{patName}}</h2> <img ng-src="{{patImage}}" class="imgThumb">
          <ul id="patternList">
             <li>Designer: {{patDesigner}}</li>
             <li>Publication: {{patPublication}}</li>
             <li>Yarn-Weight: {{patYarnWeight}}</li>
             <li>Needle Sizes: {{patNeedleSizeUS}} (US) / {{patNeedleSizeMM}} (MM)</li>
             <li>Yardage: {{patYardage}}</li>
-         </ul>      
+         </ul>
       </div>
    </div>
-   
-    <div id="insert"></div>
-    <script src="patternInfo.js"></script>
-    <script>
-       $("li.openDisplay").click(function() {
-          document.getElementById("display").style.display = "block";
-       });
-       
-       $("#closeDisplay").click(function() {
-         document.getElementById("display").style.display = "none";
-       });
-    </script>
-   
-    <script>
-      var patName = "Cladonia",
-          patDesigner = "Kirsten Kapur",
-          patPublication = "Through The Loops",
-          patYarnWeight = "Fingering",
-          patNeedleSizeUS = "7",
-          patNeedleSizeMM = "4.5",
-          patYardage = "520 - 550";
-    </script>
-   
+   <div id="insert"></div>
+   <script src="getPattern.js"></script>
+   <script src="patternInfo.js"></script>
+   <script src="clickOpen.js"></script>
    <!-- Angular module -->
-    <script>
-      var app = angular.module('patDisplay', []);
-       app.controller('MainCTRL', ['$scope', '$window', function($scope, $window) {
-          $scope.patName = $window.patName;
-          $scope.patDesigner = $window.patDesigner;
-          $scope.patPublication = $window.patPublication;
-          $scope.patYarnWeight = $window.patYarnWeight;
-          $scope.patNeedleSizeUS = $window.patNeedleSizeUS;
-          $scope.patNeedleSizeMM = $window.patNeedleSizeMM;
-          $scope.patYardage = $window.patYardage;
-          
-          $scope.getInfo = function(id) {
-             console.log(id);
-          };
-       }]);
+   <script>
+         var PatternBase = NordicTrail;
    </script>
+   <script src="patDisplay.js"></script>
 </body>
 
 </html>

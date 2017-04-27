@@ -10,7 +10,7 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1} 
     x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2500); // Change image every 2.5 seconds
+    setTimeout(carousel, 3000); // Change image every 2.5 seconds
 }
 
 var slideIndex = 1;
@@ -33,9 +33,5 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  x[slideIndex-1].style.display = "block";
 }
