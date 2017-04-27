@@ -24,8 +24,6 @@ function currentDiv(n) {
   showDivs(slideIndex = n);
 }
 
-<<<<<<< HEAD
-=======
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -37,4 +35,3 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
->>>>>>> ac4c4d1f49efa7d50b31eb24acc0beb22feda173
