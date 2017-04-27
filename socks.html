@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<<<<<<< HEAD
+<html lang="en" ng-app="patDisplay">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -7,4 +8,170 @@
 <body>
 	
 </body>
+=======
+<html>
+    <head>
+        <title>Knitten Kaboodle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body id="mainPage">
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme-d2 w3-left-align">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><img src=images/cat.jpg alt="cat" style="width:100%;max-height:25px;max-width:35px;"></a>
+                <a href="shawls.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Shawls</a>
+                <a href="sweaters.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sweaters</a>
+                <a href="mitts.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Mitts</a>
+                <a href="hats.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hats</a>
+                <a href="scarves.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Scarves</a>
+                <a href="blankets.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blankets</a>
+                <a href="vests.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Vests</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button" title="Notifications">Links <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+                        <a href="https://www.ravelry.com" class="w3-bar-item w3-button" target="_blank">Ravelry</a>
+                        <a href="http://www.knitpicks.com" class="w3-bar-item w3-button" target="_blank">KnitPicks</a>
+                        <a href="https://www.craftsy.com/knitting/shop/knitting-patterns" class="w3-bar-item w3-button" target="_blank">Craftsy</a>
+                    </div>
+                </div>
+                <form action="" autocomplete="on">
+                    <a class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+                </form>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+                <a href="shawls.html" class="w3-bar-item w3-button">Shawls</a>
+                <a href="sweaters.html" class="w3-bar-item w3-button">Sweaters</a>
+                <a href="mitts.html" class="w3-bar-item w3-button">Mitts</a>
+                <a href="hats.html" class="w3-bar-item w3-button">Hats</a>
+                <a href="scarves.html" class="w3-bar-item w3-button">Scarves</a>
+                <a href="blankets.html" class="w3-bar-item w3-button">Blankets</a>
+                <a href="vests.html" class="w3-bar-item w3-button">Vests</a>
+            </div>
+        </div>
+        <!-- Container -->
+        <div class="w3-container" style="position:relative">
+            <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
+        </div>
+        <!-- Pattern Row -->
+        <div class="w3-row-padding w3-center w3-padding-64" id="designs">
+            <h2>Sock Patterns</h2>
+            <p>Choose the sock design pattern you want to view.</p>
+            <br>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern1" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html">View Pattern 1</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern2" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 2</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern3" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 3</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern4" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 4</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern5" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 5</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern6" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 6</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme-l2">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern7" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 7</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="w3-quarter w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-hover-shadow">
+                    <li class="w3-theme">
+                        <p class="w3-xlarge">TBD</p>
+                    </li>
+                    <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="pattern8" style="width:100%;max-width:200px;max-height:230px"></li>
+                    <li class="w3-theme-l5 w3-padding-24">
+                        <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i><a href="placeholder.html"> View Pattern 8</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+            <h4>Follow Us</h4>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+            <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+            <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+                <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+                <a class="w3-button w3-theme" href="#mainPage"><span class="w3-xlarge">
+                <i class="fa fa-chevron-circle-up"></i></span></a>
+            </div>
+        </footer>
+        <script src="scripts/navigation.js"></script>
+        <script src='scripts/slideshow.js'></script>
+        <script src='scripts/server.js'></script>
+        <script src='scripts/database.js'></script>
+    </body>
+>>>>>>> 1230cda910a3c3f89c44b613825ccc61671653aa
 </html>
