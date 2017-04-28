@@ -2,9 +2,9 @@
 	"use strict";
 	
 	var express = require('express'),
-			bodyParser = require('body-parser'),
-			mongoose = require('mongoose'),
-			app = express();
+        bodyParser = require('body-parser'),
+        mongoose = require('mongoose'),
+        app = express();
 	mongoose.Promise = global.Promise;
 
 	app.use(express.static(__dirname));
