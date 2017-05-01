@@ -3,6 +3,37 @@ html, body {
    height: 100%;
 }
 
+/* scroll arrows for carousel */
+.arrows {
+   cursor: pointer;
+   width:100%;
+}
+
+/* google map*/
+.maps {
+   width: 100%;
+   height: 450px;
+}
+
+/* carousel photos */
+.slideshow {
+   width: 100%;
+   min-height: 350px;
+   max-height: 600px;
+}
+
+/* team pictures */
+.crewPics {
+   width: 45%;
+}
+
+/* titles for sample patterns */
+.miniHeader {
+   font-weight:bold;
+   text-align:center;
+}
+
+/*
 #search {
    height: 40px;
    font-size: 100%;
@@ -55,40 +86,6 @@ html, body {
    opacity: 0.8;
 }
 
-#arrows {
-   cursor: pointer;
-}
-
-#googleMap {
-   width: 100%;
-   height: 420px;
-}
-
-
-/* tags for modifying image presentation */
-
-.imageHead {
-   width: 100%;
-   min-height: 350px;
-   max-height: 600px;
-}
-
-.crewPics {
-   width: 45%;
-}
-
-
-/* design for displaying patterns */
-
-.patternDisplay {
-   width: 100%;
-   height: 100%;
-   min-height: 200px;
-   display: block;
-   background-position: center;
-   background-size: 100%;
-}
-
 #display {
    width: 100%;
    height: 100%;
@@ -96,6 +93,17 @@ html, body {
    z-index: 10;
    background-color: RGBA(0, 0, 0, 0.3);
    display: none;
+}
+
+/* design for displaying patterns */
+/*
+.patternDisplay {
+   width: 100%;
+   height: 100%;
+   min-height: 200px;
+   display: block;
+   background-position: center;
+   background-size: 100%;
 }
 
 #patternContent {
@@ -144,3 +152,4 @@ html, body {
 .openDisplay {
    cursor: pointer;
 }
+*/
