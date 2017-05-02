@@ -1,3 +1,6 @@
+//Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+//CSCI 334 Final : A Full Stack Application
+
 /* Angular app that uses info from pattern database to input same data into display div */
 
 var patName = PatternBase.name,
