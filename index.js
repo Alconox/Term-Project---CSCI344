@@ -52,7 +52,9 @@
 		});
 
 	});
-	
+    
+	//--------------CRUD-Definitions-----------//
+    
 	app.post("/putDesign", function(req, res) {
 		var newDesign = new Design(req.body);
 		newDesign.save(function(error, data) {
@@ -156,6 +158,8 @@
 			if (error) console.log(error);
 		});
 	});
+    
+    //--------------Database-Setup-----------//
     
    patterns.remove();
       console.log("Everything Dropped");
@@ -1010,6 +1014,8 @@
 //				      "image2" : 'String'});
 
     console.log("Data Loaded");
+    
+    //--------------Server-Run-----------//
     
 //    if(running){
 //        app.close();
