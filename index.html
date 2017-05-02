@@ -16,7 +16,7 @@
 
 <body id="mainPage">
     <!-- Sidebar on click -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xlarge sidelinks" id="mySidebar">
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
                 <i class="fa fa-remove"></i>
             </a>
@@ -28,7 +28,7 @@
     <div class="w3-top">
         <div class="w3-bar w3-theme-d2 w3-left-align">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><img src=images/cat.jpg alt="cat" style="width:100%;max-height:25px;max-width:35px;"></a>
+            <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i><img class="logo" src=images/cat.jpg alt="cat"></a>
             <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Our Team</a>
             <a href="#patterns" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Top Patterns</a>
             <a href="#designs" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Designs</a>
@@ -121,7 +121,7 @@
         </div>
         <div class="w3-quarter">
             <div class="w3-card-2 w3-white">
-                <img src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" alt="Cladonia" style="width:100%">
+                <img class="sampleImages" src="https://images4-e.ravelrycache.com/uploads/throughtheloops/296361404/1294_galezucker0314_TTL_medium2.jpg" alt="Cladonia">
                 <div class="w3-container">
                     <h3 class="miniHeader">Cladonia</h3>
                     <h4>Designer: Kirsten Kapur</h4>
@@ -135,7 +135,7 @@
         </div>
         <div class="w3-quarter">
             <div class="w3-card-2 w3-white">
-                <img src="http://farm2.static.flickr.com/1627/24600325983_fb5eeca8e6_b.jpg" alt="Waiting For Rain" style="width:100%">
+                <img class="sampleImages" src="http://farm2.static.flickr.com/1627/24600325983_fb5eeca8e6_b.jpg" alt="Waiting For Rain">
                 <div class="w3-container">
                     <h3 class="miniHeader">Waiting For Rain</h3>
                     <h4>Designer: Sylvia McFadden</h4>
@@ -149,7 +149,7 @@
         </div>
         <div class="w3-quarter">
             <div class="w3-card-2 w3-white">
-                <img src="http://images4-cdn.ravelrycache.com/uploads/Sadelma/243512405/IMG_6123.jpg" alt="Nurmilintu" style="width:100%">
+                <img class="sampleImages" src="http://images4-cdn.ravelrycache.com/uploads/Sadelma/243512405/IMG_6123.jpg" alt="Nurmilintu">
                 <div class="w3-container">
                     <h3 class="miniHeader">Nurmilintu</h3>
                     <h4>Designer: Heidi Alander</h4>
@@ -163,8 +163,8 @@
         </div>
     </div>
     <!-- Container -->
-    <div class="w3-container" style="position:relative">
-        <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
+    <div class="w3-container popularContainer">
+        <a onclick="w3_open()" class="w3-button w3-large w3-rectangle w3-teal popular">View Top Patterns</a>
     </div>
     <!-- Designs Row -->
     <div class="w3-row-padding w3-center w3-padding-64" id="designs">
@@ -176,7 +176,7 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Shawls</p>
                 </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="Shawls" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="Shawls"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/shawls.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Shawls</a>
                 </li>
@@ -187,7 +187,7 @@
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">Sweaters</p>
                 </li>
-                <li><img class="w3-round" src="http://farm4.static.flickr.com/3832/10041057876_7e60a1e31e_b.jpg" alt="Sweaters" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="http://farm4.static.flickr.com/3832/10041057876_7e60a1e31e_b.jpg" alt="Sweaters"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/sweaters.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Sweaters</a>
             </ul>
@@ -197,7 +197,7 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Socks</p>
                 </li>
-                <li><img class="w3-round" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="Socks" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="http://farm6.static.flickr.com/5312/5913415728_4f072b2e0a_z.jpg" alt="Socks"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/socks.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Socks</a>
                 </li>
@@ -208,7 +208,7 @@
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">Mitts</p>
                 </li>
-                <li><img class="w3-round" src="https://images4-b.ravelrycache.com/uploads/wattsolak/95943085/IMG_1374_medium.jpg" alt="Mitts" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="https://images4-b.ravelrycache.com/uploads/wattsolak/95943085/IMG_1374_medium.jpg" alt="Mitts"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/mitts.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Mitts</a>
                 </li>
@@ -219,7 +219,7 @@
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">Hats</p>
                 </li>
-                <li><img class="w3-round" src="https://images4-b.ravelrycache.com/uploads/CarinaSpencer/271768686/DSC_8671-COVER-WEB_medium2.jpg" alt="Hats" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="https://images4-b.ravelrycache.com/uploads/CarinaSpencer/271768686/DSC_8671-COVER-WEB_medium2.jpg" alt="Hats"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/hats.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Hats</a>
                 </li>
@@ -230,7 +230,7 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Scarves</p>
                 </li>
-                <li><img class="w3-round" src="http://farm3.static.flickr.com/2732/4109424385_9b281d9124_z.jpg" alt="Scarves" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="http://farm3.static.flickr.com/2732/4109424385_9b281d9124_z.jpg" alt="Scarves"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/scarves.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Scarves</a>
                 </li>
@@ -241,7 +241,7 @@
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">Blankets</p>
                 </li>
-                <li><img class="w3-round" src="http://farm3.static.flickr.com/2799/4290756155_7372f7fc94_z.jpg" alt="Blankets" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="http://farm3.static.flickr.com/2799/4290756155_7372f7fc94_z.jpg" alt="Blankets"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/blankets.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Blankets</a>
                 </li>
@@ -252,7 +252,7 @@
                 <li class="w3-theme">
                     <p class="w3-xlarge">Vests</p>
                 </li>
-                <li><img class="w3-round" src="http://images4-cdn.ravelrycache.com/uploads/FibreCompany/143369516/hikers2.jpg" alt="Vests" style="width:100%;max-width:200px;max-height:230px"></li>
+                <li><img class="w3-round designImages" src="http://images4-cdn.ravelrycache.com/uploads/FibreCompany/143369516/hikers2.jpg" alt="Vests"></li>
                 <li class="w3-theme-l5 w3-padding-24">
                     <a href="categories/vests.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Vests</a>
                 </li>
@@ -304,7 +304,7 @@
         <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
         <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
         <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <div class="w3-tooltip w3-right topper">
             <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
             <a class="w3-button w3-theme" href="#mainPage"><span class="w3-xlarge">
                 <i class="fa fa-chevron-circle-up"></i></span></a>

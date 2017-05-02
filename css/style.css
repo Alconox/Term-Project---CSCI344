@@ -15,6 +15,11 @@ html, body {
    height: 450px;
 }
 
+/* top patterns sample images */
+.sampleImages {
+   width:100%;
+}
+
 /* carousel photos */
 .slideshow {
    width: 100%;
@@ -31,6 +36,45 @@ html, body {
 .miniHeader {
    font-weight:bold;
    text-align:center;
+}
+
+/* back to top button on all pages */
+.topper {
+   position:relative;
+   bottom:100px;
+   z-index:1;
+}
+
+/*view top patterns button*/
+.popular {
+   position:absolute;
+   top:-28px;
+   right:24px
+}
+
+/*view top patterns button container*/
+.popularContainer {
+   position:relative;
+}
+
+/* side links inside the view top patterns button */
+.sidelinks {
+   display:none;
+   z-index:2
+}
+
+/* main cat logo on all pages */
+.logo {
+   width:100%;
+   max-height:25px;
+   max-width:35px;
+}
+
+/* images for main design selections */
+.designImages {
+   width:100%;
+   max-width:200px;
+   max-height:230px;
 }
 
 /*
