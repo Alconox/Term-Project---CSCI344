@@ -5,15 +5,23 @@
         bodyParser = require('body-parser'),
         mongoose = require('mongoose'),
         app = express(),
+        //running = false,
+        //urlExists = require('url-exists'),
         patterns = mongoose.connection.collection("patterns");
+
 	mongoose.Promise = global.Promise;
 
 	app.use(express.static(__dirname));
 	app.use(bodyParser.urlencoded({ extended: true }));
 	
 	mongoose.connect('mongodb://localhost/Patterns');
+    
+//    urlExists('http://localhost:3000', function (err, exists) {
+//        running = exists;
+//        console.log(exists);
+//    });
 	
-	var DesignSchema = mongoose.Schema ({"id" : Number,
+	var DesignSchema = mongoose.Schema({"id" : Number,
                       "name" : String,
 				      "designer" : String,
 				      "publication" : String,
@@ -27,14 +35,14 @@
 				     });
 	var Design = mongoose.model('Design', DesignSchema);
 	
-	app.use(function(req, res, next) {
-  	console.log('%s %s', req.method, req.url);
+	app.use(function (req, res, next) {
+        console.log('%s %s', req.method, req.url);
 		next();
 	});
 	
 	app.get("/getDesign", function(req, res) {
 		
-		Musician.find(req.query, function(err, Design) {
+		Design.find(req.query, function(err, Design) {
 			if (err) {
 				console.log(err);
 			} else {
@@ -52,10 +60,91 @@
 		});
 	});
 	
-	app.post("/updateDesign", function(req, res) {
+	app.post("/updateName", function(req, res) {
 		var conditions = {"name" : req.body.name};
-		var update = {$set : {"instrument" : req.body.instrument}};
-		Musician.update(conditions, update, {multi : false}, function(error, result) {
+		var update = {$set : {"name" : req.body.name}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+    	app.post("/updateDesigner", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"designer" : req.body.designer}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+        	app.post("/updatePublication", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"publication" : req.body.publication}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+        	app.post("/updateCategory", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"category" : req.body.category}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+	
+            	app.post("/updateYarnWeight", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"yarn-weight" : req.body.yarn-weight}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+            	app.post("/updateNeedleSizeUS", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"needle-size-us" : req.body.needle-size-us}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+	
+                	app.post("/updateNeedleSizeMM", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"needle-size-mm" : req.body.needle-size-mm}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+                	app.post("/updateYardage", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"yardage" : req.body.yardage}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+                	app.post("/updateImage1", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"image1" : req.body.image1}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
+			if (error) console.log(error);
+		});
+		res.end();
+	});
+    
+                	app.post("/updateNeedleSizeUS", function(req, res) {
+		var conditions = {"name" : req.body.name};
+		var update = {$set : {"image2" : req.image2}};
+		Design.update(conditions, update, {multi : false}, function(error, result) {
 			if (error) console.log(error);
 		});
 		res.end();
@@ -921,6 +1010,11 @@
 //				      "image2" : 'String'});
 
     console.log("Data Loaded");
+    
+//    if(running){
+//        app.close();
+//        console.log('Old server instance closed');
+//    }
     
 	app.listen(3000);
 	console.log("Server listening on port 3000."); 
