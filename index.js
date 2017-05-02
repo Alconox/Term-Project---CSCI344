@@ -16,10 +16,6 @@
 	
 	mongoose.connect('mongodb://localhost/Patterns');
     
-//    urlExists('http://localhost:3000', function (err, exists) {
-//        running = exists;
-//        console.log(exists);
-//    });
 	
 	var DesignSchema = mongoose.Schema({"id" : Number,
                       "name" : String,
@@ -39,6 +35,8 @@
         console.log('%s %s', req.method, req.url);
 		next();
 	});
+    
+    	//--------------CRUD-Definitions-----------//
 	
 	app.get("/getDesign", function(req, res) {
 		
@@ -52,8 +50,7 @@
 		});
 
 	});
-    
-	//--------------CRUD-Definitions-----------//
+
     
 	app.post("/putDesign", function(req, res) {
 		var newDesign = new Design(req.body);
@@ -1017,9 +1014,14 @@
     
     //--------------Server-Run-----------//
     
+//    urlExists('http://localhost:3000', function (err, exists) {
+//        running = exists;
+//        console.log(exists);
+//    });
+    
 //    if(running){
-//        app.close();
-//        console.log('Old server instance closed');
+        app.listen(3000).close();
+        console.log('Old server instance closed');
 //    }
     
 	app.listen(3000);
