@@ -1,3 +1,6 @@
+//Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+//CSCI 334 Final : A Full Stack Application
+
 /* gets pattern image and name from database and places it into an individual div to be appended to a div with the id insert*/
 "use strict";
 

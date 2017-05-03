@@ -1,3 +1,6 @@
+//Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+//CSCI 334 Final : A Full Stack Application
+
 // Side navigation
 function w3_open() {
     var x = document.getElementById("mySidebar");

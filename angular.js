@@ -1,3 +1,6 @@
+//Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+//CSCI 334 Final : A Full Stack Application
+
 (function() {
 	var app = angular.module('design', []);
 //shawls, sweaters. hats, mitts, scarves, blankets, vests
