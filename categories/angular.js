@@ -1,34 +1,47 @@
 //Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
 //CSCI 334 Final : A Full Stack Application
 
+//Lets build a angular module and call it design 
 (function() {
 	var app = angular.module('design', []);
+    
 //shawls, sweaters. hats, mitts, scarves, blankets, vests
+    //We have built a controller named DesignController
 	app.controller('DesignController', ['$scope', function($scope) {
+        
+        // Shawls have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a shawl
 		$scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.shawls = [];
         
+        // Sweaters have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a sweater
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.sweaters = [];
         
+        // Scarves have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a scarve
         	$scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 ='';
 		$scope.scarves = [];
         
+        // Socks have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a sock
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.socks = [];
         
+        // Hats have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a hat
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.hats = [];
         
+        // Mitts have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a mitt
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.mitts = [];
         
+        // blackets have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a blanket
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 ='';
 		$scope.blankets = [];
         
+        // Vests have a name, design, publication, category, yarn, needle1 and a needle2. All are part of a vest
         $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		$scope.vests = [];
 		
+        //Each object has its own get method
 		$scope.getShawls = function() {
             console.log("getting shawls...");
             //$get.JSON('getDesign', {"category": "shawls" })
@@ -36,6 +49,8 @@
 					$scope.shawls = result;
 			});
 		};
+        
+        
         $scope.getSweaters = function() {
             console.log("getting sweaters...");
             //$get.JSON('getDesign', {"category": "shawls" })
@@ -87,7 +102,8 @@
 					$scope.socks = result;
 			});
 		};
-           
+        
+        //add a new Design
 		$scope.add = function() {
 			var newDesign = {
 				"name" : $scope.name,
@@ -107,6 +123,7 @@
 		 $scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		};
 		
+        //Update Design
 		$scope.update = function() {
 			var updateDesign = { "name" : $scope.name,
 				"designer" : $scope.designer,
