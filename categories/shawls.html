@@ -1,5 +1,5 @@
 <!--
-//Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+//Authors: Justin Blankenship, Kaitlin Porter, Michael Parker, Dahquan Williams
 //CSCI 334 Final : A Full Stack Application
 -->
 
@@ -62,127 +62,7 @@
         <h2>Shawl Patterns</h2>
         <p>Choose the shawl design pattern you want to view.</p>
         <br>
-        <div ng-controller="DesignController">
-			<p>Press 'All' for a complete list of the musicians in our database.</p>
-			<input type="text" ng-model="shawls" style="display:none">
-			<button ng-click="getShawls()">All</button>
-
-			<table>
-				<tr ng-repeat="s in shawls">
-					<td>{{s.name}}</td>
-					<td>{{s.designer}}</td>
-					<td>{{s.category}}</td>
-                    
-					<td><button ng-click="$parent.remove(m)">Remove</button></td>
-				</tr>
-			</table>
-
-			<p>Enter the data for a musician and press submit.</p>
-			<input type="text" ng-model="name" placeholder="name">
-			<input type="text" ng-model="designer" placeholder="designer">
-			<input type="text" ng-model="publication" placeholder="designer">
-			<button ng-disabled="!(name.length && designer.length && publication.length)"
-							ng-click="add()">Add</button>
-			<button ng-disabled="!(name.length && instrument.length)"
-							ng-click="update()">Update</button>
-		</div>
-        
-        <!--<div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern1" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 1</a>
-                </li>
-            </ul>
-        </div>*/
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme-l2">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern2" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 2</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern3" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 3</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme-l2">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern4" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 4</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme-l2">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern5" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 5</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern6" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 6</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme-l2">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern7" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 7</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w3-quarter w3-margin-bottom">
-            <ul class="w3-ul w3-border w3-hover-shadow">
-                <li class="w3-theme">
-                    <p class="w3-xlarge">TBD</p>
-                </li>
-                <li><img class="w3-round" src="https://irepo.primecp.com/1003/63/154987/Satin-sparkle-summer-shawl_Medium_ID-510671.jpg?v=510671" alt="pattern8" style="width:100%;max-width:200px;max-height:230px">
-                </li>
-                <li class="w3-theme-l5 w3-padding-24">
-                    <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 8</a>
-                </li>
-            </ul>
-        </div> -->
+        <div id="insert"></div>
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
@@ -206,6 +86,10 @@
 		</script>
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src='angular.js'></script>
+        <script src="../scripts/getPattern.js"></script>
+         <script>
+            getPatterns("Shawls");
+         </script>
     <!-- <script src='../scripts/server.js'></script> -->
     <!-- <script src='../scripts/database.js'></script> -->
 </body>

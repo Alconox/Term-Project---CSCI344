@@ -1,4 +1,4 @@
-/* Authors: Justin Blankinship, Kaitlin Porter, Michael Parker, Dahquan Williams
+/* Authors: Justin Blankenship, Kaitlin Porter, Michael Parker, Dahquan Williams
 CSCI 334 Final : A Full Stack Application */
 
 html, body {
@@ -80,68 +80,12 @@ html, body {
    max-height:230px;
 }
 
-#display {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   z-index: 10;
-   background-color: RGBA(0, 0, 0, 0.3);
-   display: none;
-}
-
 /* design for displaying patterns */
 
 .patternDisplay {
    min-height: 200px;
    display: block;
    background-position: center;
-   background-size: 100%;
+   background-size: 180%;
    overflow: auto;
-}
-
-#patternContent {
-   background-color: white;
-   max-width: 430px;
-   margin: auto;
-   padding: 20px;
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
-   min-height: 50%;
-   overflow: auto;
-   border: 1px;
-}
-
-#patternList {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   padding-bottom: 5px;
-   padding-top: 5px;
-}
-
-#patternList lh {
-   font-size: 24px;
-}
-
-#patternList li {
-   margin: 0;
-   padding: 2px;
-}
-
-.imgThumb {
-   max-width: 400px;
-   padding-right: 15px;
-}
-
-#closeDisplay {
-   float: right;
-   width: 15px;
-   height: 15px;
-   cursor: pointer;
-   font-family: "Verdana";
-}
-
-.openDisplay {
-   cursor: pointer;
 }
