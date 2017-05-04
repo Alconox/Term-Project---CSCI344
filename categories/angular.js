@@ -140,9 +140,9 @@
 			$scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		};
 		
-		$scope.remove = function(shawls) {
-			$scope.designer.splice($scope.designer.indexOf(shawls), 1);
-			$.post('../removeDesign', shawls);
+		$scope.remove = function(design) {
+			$scope.shawls.splice($scope.shawls.indexOf(design), 1);
+			$.post('../removeDesign', design);
 		};									 
 	}]);
 }());
