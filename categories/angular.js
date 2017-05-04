@@ -108,14 +108,24 @@
 		};
 		
 		$scope.update = function() {
-			var updateDesign = { "name" : $scope.name, "instrument" : $scope.instrument};
+			var updateDesign = { "name" : $scope.name,
+				"designer" : $scope.designer,
+				"publication" : $scope.publication,
+                "category" : $scope.category,
+				"yarn-weight" : $scope.yarn,
+				"needle-size-us" : $scope.needle1,
+                "needle-size-mm" : $scope.needle2,
+				"yardage" : $scope.yardage,
+				"image1" : $scope.image1,
+                "image2" : $scope.image2
+                };
 			$.post('../updateDesign', updateDesign);
 			$scope.name = $scope.designer = $scope.publication = $scope.category = $scope.yarn = $scope.needle1 = $scope.needle2 = $scope.yardage = $scope.image1 = $scope.image2 = '';
 		};
 		
 		$scope.remove = function(shawls) {
 			$scope.designer.splice($scope.designer.indexOf(shawls), 1);
-			$.post('../removeDesign', musician);
+			$.post('../removeDesign', shawls);
 		};									 
 	}]);
 }());
