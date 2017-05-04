@@ -42,13 +42,13 @@
     	//--------------CRUD-Definitions-----------//
 	
 	app.get("/getDesign", function(req, res) {
-		
-		Design.find(req.query, function(err, Design) {
+		console.log(req.query);
+		Design.find(req.query, function(err, design) {
 			if (err) {
 				console.log(err);
 			} else {
-				console.log(Design);
-				res.json(Design);
+				console.log(design);
+				res.json(design);
 			}		
 		});
 

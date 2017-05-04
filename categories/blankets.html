@@ -4,7 +4,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en" ng-app="patDisplay">
+<html lang="en" ng-app="design">
 
 <head>
     <title>Blankets</title>
@@ -98,7 +98,32 @@
                 </li>
             </ul>
         </div>
-        <div class="w3-quarter w3-margin-bottom">
+        <br>
+        <div ng-controller="DesignController">
+			<p>Press 'All' for a complete list of the musicians in our database.</p>
+			<input type="text" ng-model="blankets" style="display:none">
+			<button ng-click="getBlankets()">All</button>
+
+			<table>
+				<tr ng-repeat="b in blankets">
+					<td>{{b.name}}</td>
+					<td>{{b.designer}}</td>
+					<td>{{b.publication}}</td>
+					<td><button ng-click="$parent.remove(m)">Remove</button></td>
+				</tr>
+			</table>
+
+			<p>Enter the data for a musician and press submit.</p>
+			<input type="text" ng-model="name" placeholder="name">
+			<input type="text" ng-model="designer" placeholder="designer">
+			<input type="text" ng-model="publication" placeholder="designer">
+			<button ng-disabled="!(name.length && designer.length && publication.length)"
+							ng-click="add()">Add</button>
+			<button ng-disabled="!(name.length && instrument.length)"
+							ng-click="update()">Update</button>
+		</div>
+        
+        <!--<div class="w3-quarter w3-margin-bottom">
             <ul class="w3-ul w3-border w3-hover-shadow">
                 <li class="w3-theme-l2">
                     <p class="w3-xlarge">TBD</p>
@@ -157,7 +182,7 @@
                     <a href="placeholder.html" class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i>View Pattern 8</a>
                 </li>
             </ul>
-        </div>
+        </div>-->
     </div>
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
@@ -176,6 +201,11 @@
         </div>
     </footer>
     <script src="../scripts/navigation.js"></script>
+    <script 
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js">
+		</script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src='angular.js'></script>
     <!-- <script src='../scripts/server.js'></script> -->
     <!-- <script src='../scripts/database.js'></script> -->
 </body>
