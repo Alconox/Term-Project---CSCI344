@@ -1,0 +1,25 @@
+HTML: HTML stands for Hypertext Markup Language. It is a computer language that is used for website creation. It can be used to link several documents in order to display for the user.
+
+
+CSS: CSS stands for Cascading Style Sheets. It can be used to describe html. With this you can have more detail in your page by defining style, layout, and more.  
+
+
+ANGULAR: Angular is a framework to help with the use of client side applications. It can work with HTML for visual advancement as well as be the bridge between the client side and the backing of a website.
+
+
+
+MONGODB: MONGODB is a database program. It can be used for keeping track of information that can be used throughout a system. It can be used as a file system.
+
+
+NODE.JS: NODE.JS is a javascript platform that can be used for network applications. Runtime development on the server side. 
+
+
+Express: Express is a application framework within node that can be used and built upon. Can be used for web applications. A common use of Express is that of a server. This can be used as the backing of a website.
+
+
+JQuery: JQuery is a javascript library. It makes api much simpler to use
+
+
+
+
+
