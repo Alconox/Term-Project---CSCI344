@@ -8,8 +8,6 @@
         bodyParser = require('body-parser'),
         mongoose = require('mongoose'),
         app = express(),
-        //running = false,
-        //urlExists = require('url-exists'),
         patterns = mongoose.connection.collection("patterns");
 
 	mongoose.Promise = global.Promise;
@@ -1016,16 +1014,9 @@
     console.log("Data Loaded");
     
     //--------------Server-Run-----------//
-    
-//    urlExists('http://localhost:3000', function (err, exists) {
-//        running = exists;
-//        console.log(exists);
-//    });
-    
-//    if(running){
-        app.listen(3000).close();
-        console.log('Old server instance closed');
-//    }
+
+    app.listen(3000).close();
+    console.log('Old server instance closed');
     
 	app.listen(3000);
 	console.log("Server listening on port 3000."); 
