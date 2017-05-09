@@ -138,7 +138,7 @@
 
 
 {"id" : 11,
-"name" : "Traveller\"s End",
+"name" : "Traveller's End",
 "designer" : "Carol Feller",
 "publication" : "Stolen Stitches",
 "category" : "Sweater",
@@ -166,7 +166,7 @@
 {"id" : 13,
 "name" : "Split Ends",
 "designer" : "Nataliya Polyakov",
-"publication" : "Melody\"s Makings",
+"publication" : "Melody's Makings",
 "category" : "Sweater",
 "yarn-weight" : "Worsted",
 "needle-size-us" : "8",
@@ -307,7 +307,7 @@
 
 
 {"id" : 25,
-"name" : "Hiker\"s Waistcoat",
+"name" : "Hiker's Waistcoat",
 "designer" : "The Fibre Company",
 "publication" : "Kelbourne Woollens",
 "category" : "Vest",
@@ -398,7 +398,7 @@
 
 
 {"id" : 32,
-"name" : "Dr. G\"s Memory Vest",
+"name" : "Dr. G's Memory Vest",
 "designer" : "Kirsten Kapur",
 "publication" : "Through The Loops",
 "category" : "Vest",
@@ -710,7 +710,7 @@
 
 
 {"id" : 56,
-"name" : "Baby\"s First Principles",
+"name" : "Baby's First Principles",
 "designer" : "Amy Manning",
 "publication" : "Doomsday Knits: Projects for the Apocalypse and After",
 "category" : "Blanket",
@@ -736,7 +736,7 @@
 
 
 {"id" : 58,
-"name" : "Fightin\" Words",
+"name" : "Fightin' Words",
 "designer" : "Annie Watts",
 "publication" : "Wattsolak Designs",
 "category" : "Mitts",
@@ -823,6 +823,34 @@
 "needle-size-mm" : "3.5,3.75",
 "yardage" : "140",
 "image1" : "https://images4-b.ravelrycache.com/uploads/verabee/215178590/armymitts4_medium2.jpg",
-"image2" : "https://images4-e.ravelrycache.com/uploads/verabee/215178689/armymitts2_medium2.jpg"}
+"image2" : "https://images4-e.ravelrycache.com/uploads/verabee/215178689/armymitts2_medium2.jpg"},
+
+{
+   "id": 65, 
+   "name": "Spindrift Shawl",
+   "designer": "Helen Stewart",
+   "publication": "Curious Handmade",
+   "category": "Shawls",
+   "yarn-weight": "Fingering",
+   "needle-size-us": "5, 6",
+   "needle-size-mm": "3.75, 4",
+   "yardage": "520-550",
+   "image1": "http://images4-cdn.ravelrycache.com/uploads/HellsBells/370576454/IMG_9889.jpg",
+   "image2": "http://images4-cdn.ravelrycache.com/uploads/peonie/371531314/DSC_3213.JPG"
+},
+
+{
+   "id": 66, 
+   "name": "Dream Stripes",
+   "designer": "Berangere Cailliau",
+   "publication": "L'ile aux fils",
+   "category": "Shawls",
+   "yarn-weight": "Fingering",
+   "needle-size-us": "4",
+   "needle-size-mm": "3.5",
+   "yardage": "520-550",
+   "image1": "https://images4-e.ravelrycache.com/uploads/lilofil/58017457/62425921_medium2.jpg",
+   "image2": "http://images4-cdn.ravelrycache.com/uploads/peonie/371531314/DSC_3213.JPG"
+}
    
 ]

@@ -89,3 +89,8 @@ html, body {
    background-size: 180%;
    overflow: auto;
 }
+
+#insert {
+   max-width: 1000px;
+   margin: auto;
+}
